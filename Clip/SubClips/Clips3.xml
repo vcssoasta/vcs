@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
+  <Object type="messageclip" schemaVersion="4831" name="Clip for soasta" path="/">
+    <Body>
+      <MessageClip xmlns="http://www.soasta.com/services/repository">
+        <Targets xmlns="http://www.soasta.com/services/repository">
+          <Target id="2" location="soasta" name="soasta (soasta)" ref="2" scope="local" xmlns="http://www.soasta.com/services/repository" />
+        </Targets>
+        <UserProperties xmlns="http://www.soasta.com/services/repository" />
+        <Options dynamicResourceCache="disabled" interItemDelay="0" xmlns="http://www.soasta.com/services/repository" />
+      </MessageClip>
+    </Body>
+    <BinaryData />
+    <Description></Description>
+    <Attributes>
+      <Attribute name="type">
+        <Value>sequenced</Value>
+      </Attribute>
+    </Attributes>
+    <References>
+      <Reference id="604" internalID="2" name="soasta" path="/" type="target" />
+    </References>
+    <TipText />
+  </Object>
+  <Object type="clipelement" schemaVersion="4831" name="Message1" path="/Clip for soasta" parentType="messageclip" uid="41968b56-b7df-ab58-879c-d5e2de71db73">
+    <Body>
+      <ClipElement xmlns="http://www.soasta.com/services/repository">
+        <Message xmlns="http://www.soasta.com/services/repository">
+          <Content xmlns="http://www.soasta.com/services/repository">
+            <REST verb="GET" xmlns="http://www.soasta.com/services/repository">
+              <Location xmlns="http://www.soasta.com/services/repository" />
+              <Params xmlns="http://www.soasta.com/services/repository">/</Params>
+            </REST>
+          </Content>
+        </Message>
+      </ClipElement>
+    </Body>
+    <BinaryData />
+    <Description></Description>
+    <Attributes>
+      <Attribute name="type">
+        <Value>message</Value>
+      </Attribute>
+      <Attribute name="operation">
+        <Value>get</Value>
+      </Attribute>
+      <Attribute name="destinationID">
+        <Value>2</Value>
+      </Attribute>
+      <Attribute name="offset">
+        <Value null="true" />
+      </Attribute>
+      <Attribute name="index">
+        <Value>0</Value>
+      </Attribute>
+      <Attribute name="repeatSpec">
+        <Value null="true" />
+      </Attribute>
+      <Attribute name="binding">
+        <Value>RestGetBinding</Value>
+      </Attribute>
+      <Attribute name="scope">
+        <Value>private</Value>
+      </Attribute>
+      <Attribute name="responseContentType">
+        <Value null="true" />
+      </Attribute>
+      <Attribute name="debugSpec">
+        <Value null="true" />
+      </Attribute>
+    </Attributes>
+    <TipText />
+  </Object>
+</rp:ObjectSet>
