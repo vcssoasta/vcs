@@ -18,11 +18,11 @@
       </Attribute>
     </Attributes>
     <References>
-      <Reference id="604" internalID="2" name="soasta" path="/" type="target" />
+      <Reference id="1201" internalID="2" name="soasta" path="/" type="target" />
     </References>
-    <TipText />
+    <TipText></TipText>
   </Object>
-  <Object type="clipelement" schemaVersion="4831" name="Message1" path="/Clip for soasta" parentType="messageclip" uid="41968b56-b7df-ab58-879c-d5e2de71db73">
+  <Object type="clipelement" schemaVersion="4831" name="Message1" path="/Clip for soasta" parentType="messageclip" uid="6134757f-d939-3e5b-1a0c-43ef0dd28d83">
     <Body>
       <ClipElement xmlns="http://www.soasta.com/services/repository">
         <Message xmlns="http://www.soasta.com/services/repository">
