@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
-  <Object type="folder" schemaVersion="8127" name="folder1444260736507 5" path="/">
+  <Object type="folder" schemaVersion="8127" name="SubFolder" path="/Folder1">
     <BinaryData />
   </Object>
 </rp:ObjectSet>

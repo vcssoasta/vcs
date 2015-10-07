@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
+  <Object type="target" schemaVersion="8127" name="soasta" path="/Folder1">
+    <Body>
+      <Target xmlns="http://www.soasta.com/services/repository">
+        
+        
+        <ServiceDefinition>
+          
+          
+          <WSDL>
+            
+            
+            <wsdl:definitions targetNamespace="http://www.soasta.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+              
+              
+              <wsdl:message name="RestRequestMsg" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+              
+              
+              <wsdl:message name="RestResponseMsg" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+              
+              
+              <wsdl:portType name="RestGetPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <wsdl:operation name="get" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <wsdl:input message="tns:RestRequestMsg" name="getInput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+                  
+                  
+                  <wsdl:output message="tns:RestResponseMsg" name="getOutput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+                
+                
+                </wsdl:operation>
+              
+              
+              </wsdl:portType>
+              
+              
+              <wsdl:portType name="RestPostPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <wsdl:operation name="post" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <wsdl:input message="tns:RestRequestMsg" name="postInput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+                  
+                  
+                  <wsdl:output message="tns:RestResponseMsg" name="postOutput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+                
+                
+                </wsdl:operation>
+              
+              
+              </wsdl:portType>
+              
+              
+              <wsdl:portType name="RestPutPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <wsdl:operation name="put" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <wsdl:input message="tns:RestRequestMsg" name="putInput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+                  
+                  
+                  <wsdl:output message="tns:RestResponseMsg" name="putOutput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+                
+                
+                </wsdl:operation>
+              
+              
+              </wsdl:portType>
+              
+              
+              <wsdl:portType name="RestDeletePort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <wsdl:operation name="delete" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <wsdl:input message="tns:RestRequestMsg" name="deleteInput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+                  
+                  
+                  <wsdl:output message="tns:RestResponseMsg" name="deleteOutput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+                
+                
+                </wsdl:operation>
+              
+              
+              </wsdl:portType>
+              
+              
+              <wsdl:portType name="RestHeadPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <wsdl:operation name="head" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <wsdl:input message="tns:RestRequestMsg" name="headInput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+                  
+                  
+                  <wsdl:output message="tns:RestResponseMsg" name="headOutput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+                
+                
+                </wsdl:operation>
+              
+              
+              </wsdl:portType>
+              
+              
+              <wsdl:binding name="RestGetBinding" type="tns:RestGetPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <http:binding verb="GET" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                
+                
+                <wsdl:operation name="get" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <http:operation location="" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                  
+                  
+                  <wsdl:input name="getInput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                    
+                    
+                    <mime:content part="restParams" type="application/x-www-form-urlencoded" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                    
+                    
+                    <mime:content part="restDocument" type="text/*" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                  
+                  
+                  </wsdl:input>
+                  
+                  
+                  <wsdl:output name="getOutput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                    
+                    
+                    <mime:content type="text/*" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                  
+                  
+                  </wsdl:output>
+                
+                
+                </wsdl:operation>
+              
+              
+              </wsdl:binding>
+              
+              
+              <wsdl:binding name="RestPostBinding" type="tns:RestPostPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <http:binding verb="POST" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                
+                
+                <wsdl:operation name="post" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <http:operation location="" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                  
+                  
+                  <wsdl:input name="postInput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                    
+                    
+                    <mime:content part="restParams" type="application/x-www-form-urlencoded" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                    
+                    
+                    <mime:content part="restDocument" type="text/*" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                  
+                  
+                  </wsdl:input>
+                  
+                  
+                  <wsdl:output name="postOutput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                    
+                    
+                    <mime:content type="text/*" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                  
+                  
+                  </wsdl:output>
+                
+                
+                </wsdl:operation>
+              
+              
+              </wsdl:binding>
+              
+              
+              <wsdl:binding name="RestPutBinding" type="tns:RestPutPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <http:binding verb="PUT" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                
+                
+                <wsdl:operation name="put" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <http:operation location="" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                  
+                  
+                  <wsdl:input name="putInput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                    
+                    
+                    <mime:content part="restParams" type="application/x-www-form-urlencoded" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                    
+                    
+                    <mime:content part="restDocument" type="text/*" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                  
+                  
+                  </wsdl:input>
+                  
+                  
+                  <wsdl:output name="putOutput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                    
+                    
+                    <mime:content type="text/*" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                  
+                  
+                  </wsdl:output>
+                
+                
+                </wsdl:operation>
+              
+              
+              </wsdl:binding>
+              
+              
+              <wsdl:binding name="RestDeleteBinding" type="tns:RestDeletePort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <http:binding verb="DELETE" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                
+                
+                <wsdl:operation name="delete" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <http:operation location="" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                  
+                  
+                  <wsdl:input name="deleteInput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                    
+                    
+                    <mime:content part="restParams" type="application/x-www-form-urlencoded" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                    
+                    
+                    <mime:content part="restDocument" type="text/*" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                  
+                  
+                  </wsdl:input>
+                  
+                  
+                  <wsdl:output name="deleteOutput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                    
+                    
+                    <mime:content type="text/*" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                  
+                  
+                  </wsdl:output>
+                
+                
+                </wsdl:operation>
+              
+              
+              </wsdl:binding>
+              
+              
+              <wsdl:binding name="RestHeadBinding" type="tns:RestHeadPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <http:binding verb="HEAD" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                
+                
+                <wsdl:operation name="head" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <http:operation location="" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                  
+                  
+                  <wsdl:input name="headInput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                    
+                    
+                    <mime:content part="restParams" type="application/x-www-form-urlencoded" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                    
+                    
+                    <mime:content part="restDocument" type="text/*" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                  
+                  
+                  </wsdl:input>
+                  
+                  
+                  <wsdl:output name="headOutput" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                    
+                    
+                    <mime:content type="text/*" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" />
+                  
+                  
+                  </wsdl:output>
+                
+                
+                </wsdl:operation>
+              
+              
+              </wsdl:binding>
+              
+              
+              <wsdl:service name="soasta" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                
+                
+                <wsdl:port binding="tns:RestGetBinding" name="RestGetPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <http:address location="http://www.soasta.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                
+                
+                </wsdl:port>
+                
+                
+                <wsdl:port binding="tns:RestPostBinding" name="RestPostPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <http:address location="http://www.soasta.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                
+                
+                </wsdl:port>
+                
+                
+                <wsdl:port binding="tns:RestPutBinding" name="RestPutPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <http:address location="http://www.soasta.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                
+                
+                </wsdl:port>
+                
+                
+                <wsdl:port binding="tns:RestDeleteBinding" name="RestDeletePort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <http:address location="http://www.soasta.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                
+                
+                </wsdl:port>
+                
+                
+                <wsdl:port binding="tns:RestHeadBinding" name="RestHeadPort" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+                  
+                  
+                  <http:address location="http://www.soasta.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" />
+                
+                
+                </wsdl:port>
+              
+              
+              </wsdl:service>
+            
+            
+            </wsdl:definitions>
+          
+          
+          </WSDL>
+          
+          
+          <Supplements>
+            
+            
+            <MessageInject />
+            
+            
+            <ConnectionOptions>
+              
+              
+              <Service maximumConnectionsPerHost="6" name="soasta" />
+            
+            
+            </ConnectionOptions>
+            
+            
+            <SSLOptions>
+              
+              
+              <Service name="soasta" sslv2ClientHelloEnabled="true" sslv3Enabled="true" tlsv1Enabled="true" />
+            
+            
+            </SSLOptions>
+            
+            
+            <DNSOptions>
+              
+              
+              <Service name="soasta" serverName="" />
+            
+            
+            </DNSOptions>
+            
+            
+            <MessageSupplements />
+          
+          
+          </Supplements>
+        
+        
+        </ServiceDefinition>
+      
+      
+      </Target>
+    </Body>
+    <BinaryData />
+    <Description></Description>
+    <Attributes>
+      <Attribute name="type">
+        <Value>service</Value>
+      </Attribute>
+      <Attribute name="resultsServiceID">
+        <Value null="true" />
+      </Attribute>
+      <Attribute name="longitude">
+        <Value null="true" />
+      </Attribute>
+      <Attribute name="latitude">
+        <Value null="true" />
+      </Attribute>
+    </Attributes>
+    <TipText></TipText>
+  </Object>
+</rp:ObjectSet>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
-  <Object type="target" schemaVersion="8127" name="target1444260736517 6" path="/folder1444260736507 5">
+  <Object type="target" schemaVersion="8127" name="target1444260736517 6" path="/Folder2">
     <Body>
       <Target xmlns="http://www.soasta.com/services/repository">
         <ServiceDefinition>
