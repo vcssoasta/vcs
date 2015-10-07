@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
+  <Object type="target" schemaVersion="8127" name="target1444260736517 6" path="/folder1444260736507 5">
+    <Body>
+      <Target xmlns="http://www.soasta.com/services/repository">
+        <ServiceDefinition>
+          <WSDL>
+            <definitions xmlns="http://schemas.xmlsoap.org/wsdl/" />
+          </WSDL>
+        </ServiceDefinition>
+      </Target>
+    </Body>
+    <BinaryData />
+    <Attributes>
+      <Attribute name="type">
+        <Value>service</Value>
+      </Attribute>
+      <Attribute name="resultsServiceID">
+        <Value null="true" />
+      </Attribute>
+      <Attribute name="longitude">
+        <Value>-122.023275567833</Value>
+      </Attribute>
+      <Attribute name="latitude">
+        <Value>37.3742596147624</Value>
+      </Attribute>
+    </Attributes>
+  </Object>
+</rp:ObjectSet>
