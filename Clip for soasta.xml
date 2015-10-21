@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
-  <Object type="messageclip" schemaVersion="4831" name="Clip for soasta" path="/">
+  <Object type="messageclip" schemaVersion="9013" name="Clip for soasta" path="/">
     <Body>
       <MessageClip xmlns="http://www.soasta.com/services/repository">
         <Targets xmlns="http://www.soasta.com/services/repository">
@@ -18,21 +18,30 @@
       </Attribute>
     </Attributes>
     <References>
-      <Reference id="1201" internalID="2" name="soasta" path="/" type="target" />
+      <Reference id="707" internalID="2" name="soasta" path="/" type="target" />
     </References>
     <TipText></TipText>
   </Object>
-  <Object type="clipelement" schemaVersion="4831" name="Message1" path="/Clip for soasta" parentType="messageclip" uid="6134757f-d939-3e5b-1a0c-43ef0dd28d83">
+  <Object type="clipelement" schemaVersion="9013" name="Message1" path="/Clip for soasta" parentType="messageclip" uid="835613e7-66d1-49cd-b8d7-e10339785eef">
     <Body>
       <ClipElement xmlns="http://www.soasta.com/services/repository">
+        
         <Message xmlns="http://www.soasta.com/services/repository">
+          
           <Content xmlns="http://www.soasta.com/services/repository">
+            
             <REST verb="GET" xmlns="http://www.soasta.com/services/repository">
+              
               <Location xmlns="http://www.soasta.com/services/repository" />
+              
               <Params xmlns="http://www.soasta.com/services/repository">/</Params>
+            
             </REST>
+          
           </Content>
+        
         </Message>
+      
       </ClipElement>
     </Body>
     <BinaryData />
@@ -69,6 +78,6 @@
         <Value null="true" />
       </Attribute>
     </Attributes>
-    <TipText />
+    <TipText></TipText>
   </Object>
 </rp:ObjectSet>

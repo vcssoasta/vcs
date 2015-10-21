@@ -1,139 +1,118 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
-  <Object type="composition" schemaVersion="4831" name="SoastaComp" path="/">
+  <Object type="composition" schemaVersion="9013" name="SoastaComp" path="/">
     <Body>
       <Composition xmlns="http://www.soasta.com/services/repository">
-        
-        <Bands xmlns="http://www.soasta.com/services/repository">
-          
-          <Band name="Band 1" scope="private" slotCount="1" type="sequenced" xmlns="http://www.soasta.com/services/repository">
-            
-            <Description xmlns="http://www.soasta.com/services/repository" />
-          
+        <Bands>
+          <Band name="Band 1" scope="private" slotCount="1" type="sequenced">
+            <Description />
           </Band>
-        
         </Bands>
-        
-        <Tracks xmlns="http://www.soasta.com/services/repository">
-          
-          <Track enabled="1" name="Track 1" scope="private" xmlns="http://www.soasta.com/services/repository">
-            
-            <Bands xmlns="http://www.soasta.com/services/repository">
-              
-              <Band name="Band 1" xmlns="http://www.soasta.com/services/repository">
-                
-                <Clips xmlns="http://www.soasta.com/services/repository">
-                  
-                  <Clip displayWidth="1" enabled="1" endSlot="0" failure-action="fail" name="Clip for soasta" ref="0" scope="private" startSlot="0" xmlns="http://www.soasta.com/services/repository" />
-                
+        <Tracks>
+          <Track enabled="1" name="Track 1" scope="private">
+            <Bands>
+              <Band name="Band 1">
+                <Clips>
+                  <Clip displayWidth="1" enabled="1" endSlot="0" failure-action="fail" name="Clip for soasta" ref="0" scope="private" startSlot="0">
+                    <PropSets>
+                      <PropSet>
+                        <Ref path="New list/New property2" type="global-user" />
+                        <Src>
+                          <Const value="" />
+                        </Src>
+                      </PropSet>
+                      <PropSet>
+                        <Ref path="New list/New property1" type="global-user" />
+                        <Src>
+                          <Const value="" />
+                        </Src>
+                      </PropSet>
+                    </PropSets>
+                  </Clip>
                 </Clips>
-              
               </Band>
-            
             </Bands>
-            
-            <Distributions xmlns="http://www.soasta.com/services/repository">
-              
-              <Distribution name="Distribution 1" xmlns="http://www.soasta.com/services/repository">
-                
-                <Places xmlns="http://www.soasta.com/services/repository">
-                  
-                  <Place type="AnyServer" xmlns="http://www.soasta.com/services/repository" />
-                
+            <UserProperties>
+              <UserProperty name="trackProp" sendToAnalytics="false">
+                <Value type="Text" />
+                <Description />
+              </UserProperty>
+            </UserProperties>
+            <Distributions>
+              <Distribution name="Distribution 1">
+                <Places>
+                  <Place type="AnyServer" />
                 </Places>
-              
               </Distribution>
-            
             </Distributions>
-          
           </Track>
-        
         </Tracks>
-        
-        <PlaySettings xmlns="http://www.soasta.com/services/repository">
-          
-          <PersistResult setting="true" xmlns="http://www.soasta.com/services/repository" />
-          
-          <SaveAnalysisDetails setting="true" xmlns="http://www.soasta.com/services/repository" />
-          
-          <SaveAnalysisCompElementDetails setting="true" xmlns="http://www.soasta.com/services/repository" />
-          
-          <ResultLevels xmlns="http://www.soasta.com/services/repository">
-            
-            <Composition level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Band level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Track level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <MessageClip level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Chain level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Group level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Transaction level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Page level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <If level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Switch level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Message level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <BrowserAction level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <AppAction level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <DatabaseAction level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Transition level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Checkpoint level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Delay level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Control level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Target level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Transport level="verbose" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Validation level="verbose" xmlns="http://www.soasta.com/services/repository" />
-          
+        <PlaySettings>
+          <GeoIPOptIn setting="false" />
+          <ManualRampMode setting="false" />
+          <PreviewMode setting="false" />
+          <URLTracking setting="full-for-known-assets" />
+          <PersistResult setting="true" />
+          <SaveAnalysisDetails setting="true" />
+          <SaveAnalysisCompElementDetails setting="true" />
+          <ResultLevels>
+            <Composition level="verbose" />
+            <Band level="verbose" />
+            <Track level="verbose" />
+            <MessageClip level="verbose" />
+            <Chain level="verbose" />
+            <Group level="verbose" />
+            <Transaction level="verbose" />
+            <Page level="verbose" />
+            <If level="verbose" />
+            <Switch level="verbose" />
+            <Message level="verbose" />
+            <BrowserAction level="verbose" />
+            <AppAction level="verbose" />
+            <DatabaseAction level="verbose" />
+            <Transition level="verbose" />
+            <Checkpoint level="verbose" />
+            <Delay level="verbose" />
+            <Control level="verbose" />
+            <Target level="verbose" />
+            <Transport level="verbose" />
+            <Validation level="verbose" />
+            <SendMessageWebSocket level="verbose" />
+            <TargetEventHandlerWebSocket level="verbose" />
+            <TargetEventOpenWebSocket level="verbose" />
+            <TargetEventCloseWebSocket level="verbose" />
+            <TargetEventErrorWebSocket level="verbose" />
+            <TargetEventIdleWebSocket level="verbose" />
+            <TargetEventMessageWebSocket level="verbose" />
+            <TargetEventMessageDefaultWebSocket level="verbose" />
+            <EventMessageWebSocket level="verbose" />
+            <OpenWebSocket level="verbose" />
+            <CloseWebSocket level="verbose" />
+            <EventGroup level="verbose" />
+            <Wait level="verbose" />
           </ResultLevels>
-          
-          <ContainerAnalytics xmlns="http://www.soasta.com/services/repository">
-            
-            <MessageClip enabled="true" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Chain enabled="true" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Group enabled="true" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Transaction enabled="true" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Page enabled="true" xmlns="http://www.soasta.com/services/repository" />
-            
-            <If enabled="true" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Switch enabled="true" xmlns="http://www.soasta.com/services/repository" />
-            
-            <Burst enabled="true" xmlns="http://www.soasta.com/services/repository" />
-          
+          <ContainerAnalytics>
+            <MessageClip enabled="true" />
+            <Chain enabled="true" />
+            <Group enabled="true" />
+            <Transaction enabled="true" />
+            <Page enabled="true" />
+            <If enabled="true" />
+            <Switch enabled="true" />
+            <Burst enabled="true" />
           </ContainerAnalytics>
-          
-          <ForceGC setting="false" xmlns="http://www.soasta.com/services/repository" />
-          
-          <TrackGC setting="true" xmlns="http://www.soasta.com/services/repository" />
-          
-          <HaltOnError setting="element-settings" xmlns="http://www.soasta.com/services/repository" />
-        
+          <ForceGC setting="false" />
+          <TrackGC setting="true" />
+          <HaltOnError setting="element-settings" />
+          <PromptResultName setting="false" />
+          <UseDefaultResultsDatabase setting="false" />
+          <DebugModeSettings>
+            <BreakOnFailure setting="false" />
+            <BreakOnValidationFailure setting="false" />
+            <BreakOnError setting="false" />
+          </DebugModeSettings>
         </PlaySettings>
-        
-        <Monitoring deviceAgentMonitoring="true" xmlns="http://www.soasta.com/services/repository" />
-      
+        <Monitoring deviceAgentMonitoring="true" />
       </Composition>
     </Body>
     <BinaryData />
@@ -154,10 +133,13 @@
       <Attribute name="userData">
         <Value null="true" />
       </Attribute>
+      <Attribute name="baselineResultID">
+        <Value null="true" />
+      </Attribute>
     </Attributes>
     <References>
-      <Reference id="458" internalID="1" name="Result Details Dashboard" path="/System Objects/Dashboards" type="dashboard" />
-      <Reference id="1202" internalID="0" name="Clip for soasta" path="/" type="messageclip" />
+      <Reference id="714" internalID="0" name="Clip for soasta" path="/" type="messageclip" />
+      <Reference id="486" internalID="1" name="Result Details Dashboard" path="/System Objects/Dashboards" type="dashboard" />
     </References>
     <TipText></TipText>
   </Object>
