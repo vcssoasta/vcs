@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
-  <Object type="composition" schemaVersion="9013" name="SoastaComp" path="/">
+  <Object type="composition" schemaVersion="9014" name="SoastaComp" path="/">
     <Body>
       <Composition xmlns="http://www.soasta.com/services/repository">
         <Bands>
@@ -15,12 +15,6 @@
                 <Clips>
                   <Clip displayWidth="1" enabled="1" endSlot="0" failure-action="fail" name="Clip for soasta" ref="0" scope="private" startSlot="0">
                     <PropSets>
-                      <PropSet>
-                        <Ref path="New list/New property4" type="global-user" />
-                        <Src>
-                          <Const value="" />
-                        </Src>
-                      </PropSet>
                       <PropSet>
                         <Ref path="New list/New property3" type="global-user" />
                         <Src>
@@ -127,8 +121,8 @@
       </Attribute>
     </Attributes>
     <References>
+      <Reference id="934" internalID="0" name="Clip for soasta" path="/" type="messageclip" />
       <Reference id="486" internalID="1" name="Result Details Dashboard" path="/System Objects/Dashboards" type="dashboard" />
-      <Reference id="1114" internalID="0" name="Clip for soasta" path="/" type="messageclip" />
     </References>
     <TipText></TipText>
   </Object>
