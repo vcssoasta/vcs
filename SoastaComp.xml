@@ -128,7 +128,7 @@
     </Attributes>
     <References>
       <Reference id="486" internalID="1" name="Result Details Dashboard" path="/System Objects/Dashboards" type="dashboard" />
-      <Reference id="1114" internalID="0" name="Clip for soasta" path="1" type="messageclip" />
+      <Reference id="1114" internalID="0" name="Clip for soasta" path="/" type="messageclip" />
     </References>
     <TipText></TipText>
   </Object>
