@@ -189,6 +189,11 @@
             </wsdl:definitions>
           </WSDL>
           <Supplements>
+            <Authentication>
+              <Service name="soasta">
+                <HTTPCredentials authScheme="DIGEST" e="true" n="nbvcx" p="" />
+              </Service>
+            </Authentication>
             <MessageInject />
             <ConnectionOptions>
               <Service maximumConnectionsPerHost="6" name="soasta" />
@@ -201,7 +206,7 @@
             </DNSOptions>
             <MessageSupplements />
             <GeographicLocation>
-              <Address geographicLocation="name" />
+              <Address geographicLocation="namehjkl" />
             </GeographicLocation>
           </Supplements>
         </ServiceDefinition>

@@ -191,7 +191,7 @@
           <Supplements>
             <Authentication>
               <Service name="soasta">
-                <HTTPCredentials authScheme="BASIC" e="true" n="hjkl;" p="" />
+                <HTTPCredentials authScheme="BASIC" e="true" n="hjkl;hjkl" p="" />
               </Service>
             </Authentication>
             <MessageInject />
@@ -205,6 +205,9 @@
               <Service name="soasta" serverName="" />
             </DNSOptions>
             <MessageSupplements />
+            <GeographicLocation>
+              <Address geographicLocation="nbvds" />
+            </GeographicLocation>
           </Supplements>
         </ServiceDefinition>
       </Target>
