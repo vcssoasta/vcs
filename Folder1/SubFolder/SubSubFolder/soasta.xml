@@ -189,6 +189,11 @@
             </wsdl:definitions>
           </WSDL>
           <Supplements>
+            <Authentication>
+              <Service name="soasta">
+                <HTTPCredentials authScheme="BASIC" e="true" n="fghjkl" p="" />
+              </Service>
+            </Authentication>
             <MessageInject />
             <ConnectionOptions>
               <Service maximumConnectionsPerHost="6" name="soasta" />
