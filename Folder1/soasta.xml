@@ -205,9 +205,6 @@
               <Service name="soasta" serverName="" />
             </DNSOptions>
             <MessageSupplements />
-            <GeographicLocation>
-              <Address geographicLocation="nbvds" />
-            </GeographicLocation>
           </Supplements>
         </ServiceDefinition>
       </Target>
