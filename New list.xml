@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
+  <Object type="propertyset" schemaVersion="9013" name="New list">
+    <BinaryData />
+    <Attributes>
+      <Attribute name="type">
+        <Value>user</Value>
+      </Attribute>
+    </Attributes>
+  </Object>
+  <Object type="property" schemaVersion="9013" name="New property" path="New list">
+    <BinaryData />
+    <Attributes>
+      <Attribute name="type">
+        <Value>databaseaction-level-counter</Value>
+      </Attribute>
+      <Attribute name="value">
+        <Value>lkjlkj</Value>
+      </Attribute>
+    </Attributes>
+  </Object>
+  <Object type="property" schemaVersion="9013" name="New property1" path="New list">
+    <BinaryData />
+    <Attributes>
+      <Attribute name="type">
+        <Value>appaction-level-counter</Value>
+      </Attribute>
+      <Attribute name="value">
+        <Value></Value>
+      </Attribute>
+    </Attributes>
+  </Object>
+  <Object type="property" schemaVersion="9013" name="New property2" path="New list">
+    <BinaryData />
+    <Attributes>
+      <Attribute name="type">
+        <Value>targeteventmessagewebsocket-level-counter</Value>
+      </Attribute>
+      <Attribute name="value">
+        <Value></Value>
+      </Attribute>
+    </Attributes>
+  </Object>
+</rp:ObjectSet>
