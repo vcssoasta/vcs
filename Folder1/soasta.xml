@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
-  <Object type="target" schemaVersion="9013" name="soasta" path="/Folder1">
+  <Object type="target" schemaVersion="9034" name="soasta" path="/Folder1">
     <Body>
       <Target xmlns="http://www.soasta.com/services/repository">
         <ServiceDefinition>
@@ -210,7 +210,7 @@
       </Target>
     </Body>
     <BinaryData />
-    <Description></Description>
+    <Description>cvbnm,./</Description>
     <Attributes>
       <Attribute name="type">
         <Value>service</Value>
