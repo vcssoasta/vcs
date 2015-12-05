@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
-  <Object type="target" schemaVersion="9013" name="soasta" path="/">
+  <Object type="target" schemaVersion="9064" name="soasta" path="/">
     <Body>
       <Target xmlns="http://www.soasta.com/services/repository">
         <ServiceDefinition>
@@ -191,7 +191,7 @@
           <Supplements>
             <Authentication>
               <Service name="soasta">
-                <HTTPCredentials authScheme="DIGEST" e="true" n="nbvcx" p="" />
+                <HTTPCredentials authScheme="BASIC" e="true" n="nbvcx" p="" />
               </Service>
             </Authentication>
             <MessageInject />
@@ -214,9 +214,6 @@
     <Attributes>
       <Attribute name="type">
         <Value>service</Value>
-      </Attribute>
-      <Attribute name="resultsServiceID">
-        <Value null="true" />
       </Attribute>
       <Attribute name="longitude">
         <Value null="true" />
