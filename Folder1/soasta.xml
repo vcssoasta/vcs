@@ -191,7 +191,7 @@
           <Supplements>
             <Authentication>
               <Service name="soasta">
-                <HTTPCredentials authScheme="BASIC" e="true" n="hjkl;hjkl" p="" />
+                <HTTPCredentials authScheme="DIGEST" e="true" n="hjkl;hjkl" p="" />
               </Service>
             </Authentication>
             <MessageInject />
