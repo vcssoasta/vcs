@@ -1,13 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
-  <Object type="messageclip" schemaVersion="9013" name="Clip for soasta" path="/">
+  <Object type="messageclip" schemaVersion="9067" name="Clip for soasta" path="/">
     <Body>
       <MessageClip xmlns="http://www.soasta.com/services/repository">
+        
         <Targets xmlns="http://www.soasta.com/services/repository">
+          
           <Target id="2" location="soasta" name="soasta (soasta)" ref="2" scope="local" xmlns="http://www.soasta.com/services/repository" />
+        
         </Targets>
+        
         <UserProperties xmlns="http://www.soasta.com/services/repository" />
+        
         <Options dynamicResourceCache="disabled" interItemDelay="0" xmlns="http://www.soasta.com/services/repository" />
+      
       </MessageClip>
     </Body>
     <BinaryData />
@@ -18,29 +24,38 @@
       </Attribute>
     </Attributes>
     <References>
-      <Reference id="707" internalID="2" name="soasta" path="/" type="target" />
+      <Reference id="3032" internalID="2" name="soasta123" path="/" type="target" />
     </References>
     <TipText></TipText>
   </Object>
-  <Object type="clipelement" schemaVersion="9013" name="Message1" path="/Clip for soasta" parentType="messageclip" uid="835613e7-66d1-49cd-b8d7-e10339785eef">
+  <Object type="clipelement" schemaVersion="9067" name="Message1" path="/Clip for soasta" parentType="messageclip" uid="60a95918-d494-4931-b0cb-0543ca9aaaf0">
     <Body>
       <ClipElement xmlns="http://www.soasta.com/services/repository">
         
+        
         <Message xmlns="http://www.soasta.com/services/repository">
+          
           
           <Content xmlns="http://www.soasta.com/services/repository">
             
+            
             <REST verb="GET" xmlns="http://www.soasta.com/services/repository">
+              
               
               <Location xmlns="http://www.soasta.com/services/repository" />
               
+              
               <Params xmlns="http://www.soasta.com/services/repository">/</Params>
+            
             
             </REST>
           
+          
           </Content>
         
+        
         </Message>
+      
       
       </ClipElement>
     </Body>
