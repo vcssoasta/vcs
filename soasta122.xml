@@ -210,7 +210,7 @@
       </Target>
     </Body>
     <BinaryData />
-    <Description>adasdfasdfasdfasdf</Description>
+    <Description></Description>
     <Attributes>
       <Attribute name="type">
         <Value>service</Value>
