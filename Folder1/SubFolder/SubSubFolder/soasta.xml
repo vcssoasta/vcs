@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rp:ObjectSet xmlns:rp="http://www.soasta.com/services/repository">
-  <Object type="target" schemaVersion="9014" name="soasta" path="/Folder1/SubFolder/SubSubFolder">
+  <Object type="target" schemaVersion="9092" VCSUid="fdbef9a10764bcb84e6ea812b083a27a" name="soasta" path="/Folder1/SubFolder/SubSubFolder">
     <Body>
       <Target xmlns="http://www.soasta.com/services/repository">
         <ServiceDefinition>
@@ -210,13 +210,10 @@
       </Target>
     </Body>
     <BinaryData />
-    <Description></Description>
+    <Description>asdfasdf</Description>
     <Attributes>
       <Attribute name="type">
         <Value>service</Value>
-      </Attribute>
-      <Attribute name="resultsServiceID">
-        <Value null="true" />
       </Attribute>
       <Attribute name="longitude">
         <Value null="true" />
